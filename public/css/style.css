@@ -1,0 +1,170 @@
+body {
+	min-height: 100%;
+ 	 margin: 0;
+  	padding: 0;
+	position: relative;
+	min-height: 100vh;
+}
+
+/* NAVBAR */
+
+.logosite {
+	color: #a05444;
+	border: 2px solid white;
+	background-color: white;
+	padding: 18px;
+	font-size: 12px;
+	padding-left: 75px;
+	padding-right: 75px;
+	margin-left: 10%;
+	pointer-events: none;
+}
+
+.navbar-custom {
+	background-color: #a05444;
+	padding: 3%;
+}
+
+.text
+{
+	color: white;
+}
+
+.row {
+	width: 100%;
+}
+
+li a {
+	color: white;
+	font-size: 25px;
+}
+
+/* Page de connexion */
+
+.compte {
+	margin-top: 5%;
+	color: black;
+	margin-left: 26%;
+}
+
+.compteii {
+	margin-top: 5%;
+	color: black;
+}
+
+.descriptioncompte {
+	color: black;
+}
+
+.linkToken {
+	color: #000000;
+	text-decoration:none;
+	margin-left: 3%;
+}
+
+.linkToken:hover
+{
+	text-decoration:none;
+	color: #000000;
+}
+
+.boutonvert {
+	border: 2px solid #062806;
+	background-color: #062806;
+	color: white;
+	border-radius: 4px;
+}
+
+@media screen and  (max-width: 767.98px) {
+	.compte {
+	margin-top: 5%;
+	color: black;
+	text-align: center;
+	margin-left: 0%;
+}
+
+.compteii {
+	margin-top: 5%;
+	color: black;
+	text-align: center;
+}
+.descriptioncompte {
+	color: black;
+	text-align: center;
+}
+
+.boutonvert {
+	border: 2px solid #062806;
+	background-color: #062806;
+	color: white;
+	border-radius: 4px;
+	margin: 0 auto;
+	display: block;
+}
+
+.formulaireconnexion {
+	width: 45%;
+	margin: 0 125px;
+	display: block;
+}
+
+.formulaireinscription
+{
+	width: 45%;
+	margin: 0 auto;
+	display: block;
+}
+}
+
+.formulaireconnexion {
+	width: 45%;
+	margin: 0 auto;
+	display: block;
+}
+
+/* Footer */
+
+footer {
+
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	clear: both;
+}
+
+.panel-custom {
+	background-color: #000000;
+}
+
+/* Gestion des locataires */
+
+.divG {
+	margin-left: 13%;
+}
+
+.titreG {
+	margin-left: 13%;
+	margin-top:2.5%;
+	color: #a05444;
+	float:left;
+	clear: both;
+}
+
+.table {
+	margin-top: 7%;
+	width: 75%;
+}
+
+form {
+	margin-left: 13%;
+	width: 25%;
+	margin-top: 2%;
+}
+
+@media screen and  (max-width: 767.98px) {
+	form {
+		margin-left: 13%;
+		width: 75%;
+		margin-top: 2%;
+	}
+}

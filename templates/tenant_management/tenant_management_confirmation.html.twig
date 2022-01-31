@@ -1,0 +1,8 @@
+<p>Bonjour, <b>{{ firstname }} {{ lastname }}</b></p>
+<p>Voici vos identifiants</p>
+<p>Email : <b>{{ Adremail }}</b></p>
+<p>Mot de passe : <b>{{ password }}</b>}</p>
+<i>Veuillez ne pas divulguer ces informations à autrui !</i>
+
+
+<a href="{{ url('confirm_account', {"token": token}) }}">Cliquez-ici pour confirmer votre compte</a>

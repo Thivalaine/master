@@ -1,0 +1,48 @@
+controllers:
+    resource: ../src/Controller/
+    type: annotation
+
+kernel:
+    resource: ../src/Kernel.php
+    type: annotation
+
+# connexion
+
+login:
+    path: /
+    methods: [ "GET", "POST" ]
+    controller: App\Controller\LoginController::login
+
+# inscription
+
+registration:
+    path: /inscription
+    methods: [ "GET", "POST" ]
+    controller: App\Controller\RegistrationController::registration
+
+profil:
+    path: /profil
+    methods: ["GET"]
+    controller: App\Controller\ProfilController::index
+
+# déconnexion provisoire
+app_logout:
+    path: /logout
+    methods: [ "GET" ]
+
+# page de la gestion des locataires
+
+tenant_management:
+    path: /tenant_management
+    methods: ["GET"]
+    controller: App\Controller\TenantManagementController::index
+
+tenant_management_add:
+    path: /tenant_management_add
+    methods: ["GET", "POST"]
+    controller: App\Controller\TenantManagementController::add
+
+tenant_management_edit:
+    path: /tenant_management/{id}
+    methods: ["GET", "POST"]
+    controller: App\Controller\TenantManagementController::edit

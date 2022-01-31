@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {% if app.user.token is not empty %}
+        <h1>Veuillez valider votre compte s'il vous plaît !</h1>
+    {% elseif not app.user %}
+        <h1>Vous n'êtes pas connecté !</h1>
+    {% else %}
+        <h1 style="margin-left: 13%; margin-top: 2%;">{{ app.user.firstname }} {{ app.user.lastname }}</h1>
+        <p style="margin-left: 13%;">Vous êtes inscrit en tant que
+            {% if app.user.role == 'ROLE_OWNER' %}
+                <b>bailleur</b>
+            {% elseif app.user.role == 'ROLE_REPRESENTATIVE' %}
+                <b>mandataire</b>
+            {% else %}
+                <b>locataire</b>
+            {% endif %}
+            sur la plateforme.</p>
+
+        <p style="margin-left: 13%;">Actions :</p>
+        <a href="" style="margin-left: 13%;">> Afficher mes locations</a>
+        <br>
+        <a href="" style="margin-left: 13%;">> Supprimer mon compte</a>
+    {% endif %}
+{% endblock %}

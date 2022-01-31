@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1 style="margin-left: 13%; margin-top: 1%;">Ajout d'un locataire</h1>
+    {{ form_start(form) }}
+
+    {{ form_row(form.firstname, {'label': 'Prénom', 'attr': {'placeholder': 'Prénom'}}) }}
+    {{ form_row(form.lastname, {'label': 'Nom', 'attr': {'placeholder': 'Nom'}}) }}
+    {{ form_row(form.email, {'label': 'Adresse e-mail', 'attr': {'placeholder': 'Adresse e-mail'}}) }}
+    <button type="submit" class="btn btn-success">Ajouter</button>
+    {{ form_end(form) }}
+{% endblock %}
